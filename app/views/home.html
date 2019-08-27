@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <base href="/"> 
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+        <link rel="stylesheet" type="text/css" href="prettyprint.css">
+        <link rel="stylesheet" type="text/css" href="./prettify-small/google-code-prettify/prettify.css">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    </head>
+    <header>
+        <h3></h3>
+    </header>
+    <body >
+        <div class="container">
+            
+            <form >
+                <div class="input-group col-md-10">
+                    <div class="custom-file">
+                        <input type="file" class="custom-file-input validate" id="inputGroupFile02">
+                        <label id="label" class="custom-file-label form-control" for="inputGroupFile02" aria-describedby="inputGroupFileAddon02">Choose map file</label>
+                    </div>
+                    <div class="input-group-append">
+                        <button onclick="send(event)" class="input-group-text" id="inputGroupFileAddon02">Upload</button>
+                    </div>
+                </div>
+            </form>
+
+            <br>
+            
+            <div id="message"class="col-md-10" >
+                <div class="card-body">
+                        <h5 class="card-title text-center">Carregue seu Map para fazermos os Cálculos</h5>
+                        <h6 class="card-subtitle mb-4 text-muted text-center">Seu XML será exibido abaixo</h6>
+                    
+                            <pre class="prettyprint lang-xml" id="xml">
+&lt;!-- A green ripple drawn atop a black rectangle. --&gt;
+&lt;ripple android:color="#ff00ff00"&gt;
+&lt;item android:drawable="@android:color/black" /&gt;
+&lt;/ripple&gt;
+
+&lt;!-- A blue ripple drawn atop a drawable resource. --&gt;
+&lt;ripple android:color="#ff0000ff"&gt;
+&lt;item android:drawable="@drawable/my_drawable" /&gt;
+&lt;/ripple&gt;
+                            </pre>
+                </div>
+            </div>
+
+        </div>
+            
+    </body>
+    <footer>
+        
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    
+    <script type="text/javascript" src="./prettify-small/google-code-prettify/prettify.js"></script>
+    <script type="text/javascript" src="homeFunctions.js" ></script>
+
+</html>

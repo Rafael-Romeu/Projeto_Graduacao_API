@@ -1,0 +1,20 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "description": "Esta api tem por objetivo converter as latitudes e longitudes utilizadas no openstreetmap(WGS84) para UTM para facilitar a geracao da malha das estradas e os marcadores",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "author": "Rafael Romeu",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "consign": "^0.1.6",
+    "express": "^4.17.1",
+    "node-fetch": "^2.6.0",
+    "nodemon": "^1.19.1",
+    "xml-js": "^1.6.11"
+  }
+}
